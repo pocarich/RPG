@@ -1,0 +1,25 @@
+#include"../header/ColorMgr.h"
+
+vector<Color> ColorMgr::colorList;
+
+void ColorMgr::Load()
+{
+	//base
+	colorList.push_back(GetColor(0xff, 0xff, 0xff));
+	colorList.push_back(GetColor(0x00, 0x00, 0x00));
+	colorList.push_back(GetColor(0x80, 0x80, 0x80));
+	colorList.push_back(GetColor(0xff, 0x00, 0x00));
+	colorList.push_back(GetColor(0x00, 0x00, 0xff));
+	colorList.push_back(GetColor(0x00, 0xff, 0x00));
+	colorList.push_back(GetColor(0xff, 0xff, 0x00));
+	colorList.push_back(GetColor(0x80, 0x00, 0x80));
+	colorList.push_back(GetColor(0xff, 0xc0, 0xcb));
+	colorList.push_back(GetColor(0xff, 0xa5, 0x00));
+	colorList.push_back(GetColor(0xa5, 0x2a, 0x2a));
+	colorList.push_back(GetColor(0xad, 0xff, 0x2f));
+	colorList.push_back(GetColor(0x00, 0xff, 0xff));
+
+	//custom
+	colorList.push_back(GetColor(0x10, 0x10, 0x10));
+
+}
